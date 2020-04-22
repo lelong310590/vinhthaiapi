@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin-ext,vietnamese')
+
+@import '_variable.sass'
+
+h1, h2, h3, h4, h5, h6
+    color: #040404
+
+h1
+    font-size: 30px
+
+button
+    font-family: 'Roboto', sans-serif
+    text-transform: uppercase
+    transition: all 300ms linear 0s
+    &:hover
+        transition: all 300ms linear 0s
+    &:focus
+        outline: none!important
+
+.btn-outline
+    border: 1px solid $blue
+    background: #fff
+    color: $blue
+    border-radius: 20px
+    &:hover
+        background: $green-light
+        border-color: $green-light
+        color: #fff
+
+.btn-default
+    border: 1px solid $blue
+    background: $blue
+    color: #fff
+    border-radius: 20px
+    &:hover
+        background: $green-light
+        border-color: $green-light
+        color: #fff
+
+a.status
+    color: #fff
+    padding: 3px 10px
+    border-radius: 6px
+    line-height: 1
+    &:hover
+        text-decoration: none
+
+a.success
+    background: green
+
+a.danger
+    background: #f54f4f
+
+span.label
+    font-size: 11px
+
+.btn-full
+    width: 100%
+    padding: 10px 0
+
+.parsley-errors-list
+    padding-left: 0
+    list-style: none
+    margin-top: 5px
+    color: red
+.parsley-error
+    border-color: red!important
+
+.swal-footer
+    display: flex
+    justify-content: center
+    button
+        &:focus, &:visited
+            outline: none
+            box-shadow: none
+
+.bg-yellow-casablanca
+    background: #f2784b!important
+.bg-blue
+    background: #3598dc!important
+.bg-green-haze
+    background: #44b6ae!important
+.bg-yellow
+    background: #c49f47!important
+.bg-purple
+    background: #8e44ad!important
+.bg-yellow-crusta
+    background: #f3c200!important
+.bg-red
+    background: #dd4b39!important
+
+
+@import '_base.sass'
+@import '_desktop.sass'
+@import '_tablet.sass'
+@import '_mobile.sass'

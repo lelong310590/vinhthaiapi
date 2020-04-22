@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Bảng điều khiển | Phần mềm quản lý công việc</title>
+
+    <!-- Load CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+</head>
+
+<body>
+
+<div class="header" id="header">
+    <div class="logo">
+        <img src="images/logo.jpg" alt="" class="img-responsive">
+        <h1 class="logo-title">CÔNG TY CP CÔNG NGHIỆP PHỤ TRỢ ICHI VIỆT NAM</h1>
+    </div>
+    <div class="notification-bar">
+        <a href="" class="notification">
+            <i class="fa fa-bell-o" aria-hidden="true"></i>
+            <span class="badge">10</span>
+        </a>
+        <a href="" class="user">
+            <img src="images/avatar.jpeg" alt="" class="img-responsive">
+        </a>
+    </div>
+</div>
+
+<div class="main" id="main">
+    <div class="sidebar">
+        <ul class="main-menu">
+            <li class="active">
+                <a href="">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    Bảng điều khiển
+                </a>
+            </li>
+            <li class="has-child">
+                <a href="">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    Bảng điều khiển
+                </a>
+                <ul class="child-menu">
+                    <li><a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Danh sach PO</a></li>
+                    <li><a href=""><i class="fa fa-caret-right" aria-hidden="true"></i> Tao PO moi</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    Bảng điều khiển
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                    Bảng điều khiển
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="main-wrapper">
+        <div class="component">
+            <h4 class="component-title">Tạo po</h4>
+            <div class="component-wrapper">
+                <form action="" method="post" role="form">
+
+                    <div class="row">
+                        <div class="col-xs-12 col-md-3">
+                            <div class="form-group">
+                                <label for="">Mã đơn hàng</label>
+                                <input type="text" class="form-control" name="" id="" placeholder="Input...">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                            <div class="form-group">
+                                <label for="">Mã đơn hàng</label>
+                                <input type="text" class="form-control" name="" id="" placeholder="Input...">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3">
+                            <div class="form-group">
+                                <label for="">Mã đơn hàng</label>
+                                <input type="text" class="form-control" name="" id="" placeholder="Input...">
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-3 component-action">
+                            <a href="" class="fill-button">
+                                <i class="fa fa-plus" aria-hidden="true"></i> Thêm KH mới
+                            </a>
+                            <a href="" class="outline-button">
+                                <i class="fa fa-list" aria-hidden="true"></i> Chọn KH cũ
+                            </a>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="component">
+            <h4 class="component-title">Tạo po</h4>
+            <div class="component-table">
+                <div class="component-table-bar">
+                    <a href="" class="btn-outline text-uppercase component-table-bar-button">Tạo po</a>
+
+                    <div class="component-table-filter">
+                        <div class="component-table-search">
+                            <form action="" method="post" role="form">
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="" placeholder="Tìm kiếm..">
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </div>
+
+                                <div class="form-group">
+                                    <select name="name" id="inputID" class="form-control">
+                                        <option value=""> -- Select One --</option>
+                                        <option value=""> -- Select One --</option>
+                                        <option value=""> -- Select One --</option>
+                                    </select>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="component-table-content">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Mã đơn hàng</th>
+                                <th>Khách hàng</th>
+                                <th>Ngày nhận</th>
+                                <th>Ngày giao</th>
+                                <th>Bản vẽ</th>
+                                <th>Xưởng gia công</th>
+                                <th>Tình trạng</th>
+                                <th><b>Chi tiết</b></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td class="action">
+                                    <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td class="action">
+                                    <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td class="action">
+                                    <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td class="action">
+                                    <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td class="action">
+                                    <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td class="action">
+                                    <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td class="action">
+                                    <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td class="action">
+                                    <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td class="action">
+                                    <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td>4_Lan_37</td>
+                                <td class="action">
+                                    <a href=""><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="100%" class="table-footer">
+                                    <div class="table-count">30 đơn</div>
+                                    <div class="pagination-wrapper">
+                                        <ul class="pagination">
+                                            <li><a href="#"><i class="fa fa-step-backward" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-caret-left" aria-hidden="true"></i></a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-step-forward" aria-hidden="true"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.min.js"></script>
+
+</body>
+</html>

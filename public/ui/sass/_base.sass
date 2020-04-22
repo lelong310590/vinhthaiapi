@@ -1,0 +1,647 @@
+body
+	font-family: 'Roboto', sans-serif
+	font-size: 14px
+	color: #000
+	line-height: 1.5
+	background: radial-gradient(ellipse at center, #fcfcfc 0%, #ededed 100%)
+
+//login
+.module-sign-in
+	background: url('./../images/sign-in-bg.jpg')
+	background-size: 100% 100%
+	background-position: center center
+	background-repeat: no-repeat
+	height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+	.sign-in-wrapper
+		max-width: 660px
+		background: #fff
+		border-radius: 10px
+		display: flex
+		overflow: hidden
+		.sign-in-form
+			padding: 20px
+			img
+				margin: 0 auto
+				display: block
+				max-width: 222px
+			form
+				label
+					color: #34495e
+					margin-bottom: 8px
+				legend
+					font-size: 20px
+					margin: 20px 0 20px
+					border: none
+					color: #34495e
+				button[type="submit"]
+					width: 100%
+					font-size: 14px
+					padding: 8px 0
+					text-align: center
+				.form-control
+					min-width: 267px
+					border-color: #d7d7d7
+					border-radius: 15px
+				.form-group
+					margin-bottom: 15px
+		.sign-in-forget-password
+			color: #212d39
+			margin-top: 15px
+			text-decoration: underline
+			&:hover
+				color: $blue
+	.sign-in-image
+		min-width: 307px
+		background: url('./../images/sign-in-image.jpg')
+		background-size: 100% 100%
+		background-position: center center
+		background-repeat: no-repeat
+
+.header
+	padding: 5px 15px
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	z-index: 999
+	background: #4622b7
+	li
+		list-style: none
+	.logo
+		display: flex
+		align-items: center
+		flex: 1
+		ul
+			margin: 0
+			padding: 0
+			a
+				color: #fff
+				&:hover
+					text-decoration: none
+		.header-nav
+			margin: 0 15px
+			ul
+				margin: 0 15px
+		.home-link
+			width: 235px
+		img
+			max-width: 85px
+			flex: 1
+			margin-right: 50px
+			width: 85px
+		.logo-title
+			margin: 0
+			font-size: 15px
+	.notification-bar
+		display: flex
+		align-items: center
+		flex: 1
+		justify-content: flex-end
+		.dropdown
+			display: flex
+			align-items: center
+			position: relative
+		.notification
+			color: #bdc3c7
+			font-size: 25px
+			display: block
+			position: relative
+		.user
+			width: 46px
+			height: 46px
+			border-radius: 100%
+			overflow: hidden
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-left: 25px
+			img
+				cursor: pointer
+	.quick-menu
+		position: relative
+		padding: 15px 0
+		display: block
+		a
+			color: #fff
+			&:hover
+				text-decoration: none
+		&:hover
+			.quick-menu-wrapper
+				display: block
+		.quick-menu-wrapper
+			position: absolute
+			top: 100%
+			left: 0
+			min-width: 235px
+			background: #fff
+			box-shadow: 0 4px 20px 1px rgba(0, 0, 0, 0.06), 0 1px 4px rgba(0, 0, 0, 0.08)
+			display: none
+			ul
+				margin: 0
+				padding: 0
+				list-style: none
+				li
+					a
+						color: #333
+						display: block
+						padding: 5px 15px
+
+//badge
+span.badge
+	background: $green-dark
+	color: #fff
+	width: 20px
+	height: 20px
+	border-radius: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	position: absolute
+	top: 0
+	left: 50%
+
+.main
+	margin-top: 60px
+.sidebar
+	width: 235px
+	box-shadow: 0px 0px 8px #ccc
+	height: 100%
+	position: fixed
+	left: 0
+	top: 60px
+	z-index: 100
+	//background: radial-gradient(ellipse at center, #232b44 0%, #191e30 100%)
+	background: #fff
+	.main-menu
+		padding: 0 0 110px 0
+		margin: 0
+		list-style: none
+		height: 100%
+		position: relative
+		li.active
+			& > a
+				//background: linear-gradient(to right, #2ec7cb 0%, #6c8bef 100%)
+				color: #fff
+				background: #4622b7
+			.child-menu
+				display: block!important
+		li
+			display: flex
+			align-items: center
+			justify-content: center
+			//border-bottom: 1px solid #dee2e6
+			a
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				color: #2c3e50
+				width: 100%
+				position: relative
+				padding: 13px 14px 14px
+				&:hover, &:focus, &:active
+					text-decoration: none
+					//background: linear-gradient(to right, #2ec7cb 0%, #6c8bef 100%)!important
+					color: #fff
+					background: #4622b7
+				& > i
+					font-size: 14.5px
+					width: 24px
+			.child-menu
+				position: relative
+				left: 0
+				top: 0
+				padding: 0
+				margin: 0
+				z-index: 0
+				display: none
+				background: #fff
+				width: 100%
+				li
+					border: none
+					a
+						display: flex
+						width: 100%
+						height: auto
+						justify-content: flex-start
+						flex-direction: row
+						align-items: center
+						color: #2c3e50
+						background: #efefef
+						padding: 8px
+						&:hover
+							color: #fff
+							background: #4622b7
+						i
+							margin: 0
+							font-size: 13px
+							width: 16px!important
+		.has-child
+			position: relative
+			flex-direction: column
+			//&:hover
+				//& > .child-menu
+				//	display: block
+			.has-child-arrow
+				position: absolute
+				right: 0
+				font-size: 15px
+				top: 0
+				z-index: 1000
+				cursor: pointer
+				width: 48px
+				height: 48px
+				display: flex
+				justify-content: center
+				align-items: center
+
+.main-wrapper
+	margin-left: 235px
+	padding: 40px 30px
+
+.component
+	margin-bottom: 30px
+	.component-title
+		margin: 0
+		text-transform: uppercase
+		padding-bottom: 15px
+		border-bottom: 1px solid #dee2e6
+		font-size: 15px
+		font-weight: 700
+	.component-wrapper
+		padding: 30px 20px
+		border: 1px solid #efefef
+		box-shadow: 0px 0px 8px #cccccc
+		border-radius: 10px
+		margin-top: 40px
+		color: #2c3e50
+		background: #fff
+		label
+			margin-bottom: 8px
+		.form-control
+			border: 1px solid #ced4da
+			background: #fcfdff
+		.form-group
+			margin-bottom: 20px
+		.component-action
+			display: flex
+			justify-content: space-between
+			a
+				height: 34px
+				display: flex
+				flex: 1
+				justify-content: center
+				align-items: center
+				color: #000
+				border: 1px solid $green-dark
+				margin-top: 25px
+				border-radius: 4px
+				margin-right: 15px
+				&:hover
+					text-decoration: none
+				&:last-child
+					margin-right: 0
+				i
+					margin-right: 10px
+			.fill-button
+				background: $green-light
+				&:hover
+					background: $green-dark
+			.outline-button
+				background: #fff
+				&:hover
+					background: $green-light
+.component-table
+	.component-table-bar
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 20px 0
+		.component-table-bar-button
+			font-weight: 700
+			font-size: 14px
+			padding: 5px 40px
+			&:hover
+				text-decoration: none
+		.component-table-filter
+			.component-table-search
+				form
+					position: relative
+					display: flex
+					justify-content: space-between
+					align-items: center
+					.form-group
+						margin: 0 10px 0 0
+						position: relative
+						min-width: 300px
+						.form-control
+							background: #fff
+							border-radius: 25px
+							padding: 8px 15px
+							height: unset
+						&:last-child
+							margin-right: 0
+					button
+						position: absolute
+						top: 2px
+						right: 4px
+						background: 0
+						border: none
+						box-shadow: none
+						color: #2c3e50
+.component-table-content
+	table
+		background: #fff
+		border-radius: 15px
+		box-shadow: 0px 0px 8px #cccccc7a
+		tbody
+			display: block
+			max-height: 600px
+			overflow-y: scroll
+		thead, tbody tr
+			display: table
+			width: 100%
+			table-layout: fixed
+		th
+			font-weight: 400
+			border-bottom: 1px solid #e0e0e0
+			padding: 20px!important
+		td
+			padding: 20px!important
+			border: none!important
+			vertical-align: middle!important
+		.action
+			a
+				color: $green-dark
+				font-size: 20px
+				margin-right: 15px
+				&:hover
+					color: #df9c95
+		.table-footer
+			vertical-align: middle
+			border-top: 1px solid #e0e0e0!important
+			padding: 10px 20px!important
+			.table-count
+				float: left
+				margin-top: 8px
+			.pagination-wrapper
+				float: right
+				.pagination
+					margin: 0
+					li
+						a
+							border: none
+							color: #757575
+							border-radius: 3px
+							margin: 0 2px
+					.active
+						a
+							color: #fff
+							background: $green-dark!important
+		.table-thumbnail
+			border: 1px solid #eee
+			display: flex
+			justify-content: center
+			align-items: center
+			img
+				max-height: 66px
+.user-panel-menu
+	position: absolute
+	top: 90%
+	right: 15px
+	background: #fff
+	box-shadow: 0 1px 15px 1px rgba(0,0,0,.04), 0 1px 6px rgba(0,0,0,.08)
+	min-width: 160px
+	p
+		color: #70657b
+		white-space: nowrap
+		padding: 8px 15px
+		margin: 0
+	ul
+		list-style: none
+		padding: 0
+		margin: 0
+		li
+			a
+				color: inherit
+				display: block
+				padding: 8px 15px
+				&:hover, &:focus, &:visited
+					text-decoration: none
+				&:hover
+					background: #eee
+			&:last-child
+				margin-bottom: 0
+.price-table-content-item
+	display: flex
+	justify-content: space-between
+	align-items: center
+	border: 1px solid #ccc
+	margin-bottom: 15px
+	padding: 15px
+	.price-table-content-item-no
+		font-weight: 700
+		width: 40px
+	.price-table-content-text
+		flex: 1
+	.price-table-content-action
+		width: 235px
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		.checkbox
+			margin: 0 30px 0 0
+			label
+				margin: 0
+				font-size: 16px
+			input[type=checkbox]
+				margin: 3px 0 0 -25px!important
+
+.dashboard-content
+	margin-top: 25px
+
+.dashboard-widget-item
+	position: relative
+	.success
+		background: linear-gradient(to right, #2dc1c9 0%, #2194c1 30%, #252d47 100%)
+		color: white
+		.progress-bar
+			background: #51d1d8
+		i
+			color: #51d1d8
+	.danger
+		background: linear-gradient(to right, #e47c64 0%, #e36481 30%, #252d47 100%)
+		color: white
+		.progress-bar
+			background: #eca18f
+		i
+			color: #eca18f
+	.warning
+		background: linear-gradient(to right, #ffba00 0%, #fc9244 30%, #252d47 100%)
+		color: white
+		.progress-bar
+			background: #ffc833
+		i
+			color: #ffc833
+	.primary
+		background: linear-gradient(to right, #7a79fe 0%, #a758f5 30%, #252d47 100%)
+		color: white
+		.progress-bar
+			background: #acacfe
+		i
+			color: #acacfe
+	.activity-block
+		padding: 15px 20px
+		background: #fff
+		color: #2c3e50
+		h5
+			color: inherit
+			font-size: 20px
+			font-weight: 700
+		.media
+			display: flex
+			align-items: flex-start
+			.media-body
+				font-size: 14px
+			i
+				font-size: 24px
+				margin-top: 10px
+		.bg-icon
+			font-size: 100px
+			height: 100px
+			width: 100%
+			position: absolute
+			z-index: 0
+			top: 10px
+			left: 0
+			opacity: 0.2
+			padding: 0 15px
+		.progress
+			width: 100%
+			background: transparent
+			left: -20px
+			bottom: -12px
+			position: relative
+			overflow: visible
+			margin-top: 5px
+			z-index: 3
+			margin-bottom: 0
+			box-shadow: none
+			height: auto
+		.progress-bar
+			height: 4px
+			.trackerball
+				height: 8px
+				width: 8px
+				float: right
+				position: relative
+				top: -2px
+				background: #ffffff
+				border-radius: 4px
+				box-shadow: 0 0px 6px 0px white
+.setting-menu
+	.component-wrapper
+		padding: 0
+		border-radius: 0
+	.tab-menu-setting
+		margin: 0
+		background: #fff
+		li
+			padding: 0!important
+			a
+				padding: 8px 15px
+				display: block
+				color: #2c3e50
+				&:hover
+					text-decoration: none
+					background: #4622b7
+					color: #fff
+				i
+					margin-right: 5px
+					width: 18px
+		.active
+			a
+				background: #4622b7
+				color: #fff
+.snippet_edit
+	input[type="radio"]
+		margin-right: 15px
+	.checkbox-inline
+		padding-left: 0!important
+		margin-right: 25px
+.analytics-wrapper
+	background: #fff
+	margin-top: 30px
+	.analytic-header
+		margin: 0
+		padding: 15px
+		border-bottom: 1px solid #efefef
+	.analytics-inner
+		margin-top: 15px
+
+.info-box
+	display: block
+	min-height: 50px
+	background: #f1f1f1
+	width: 100%
+	box-shadow: 0 1px 1px rgba(0,0,0,.1)
+	border-radius: 2px
+	margin-bottom: 15px
+	border: 1px solid #f5f5f5
+	.info-box-icon
+		font-size: 30px
+		height: 56px
+		width: 50px
+		line-height: 56px
+		color: #fff
+		display: block
+		float: left
+		text-align: center
+		background-color: #d2d6de
+	.info-box-content
+		padding: 4px 10px
+		margin-left: 50px
+	.info-box-text
+		font-size: 13px
+	.info-box-number
+		display: block
+		font-weight: 700
+		font-size: 18px
+
+.portlet.light
+	background-color: #fff
+.portlet.light.bordered
+	border: 1px solid #e7ecf1!important
+.portlet.light.bordered>.portlet-title
+	border-bottom: 1px solid #eef1f5
+.portlet.portlet-no-padding .portlet-title
+	margin-bottom: 0
+	min-height: 40px
+	padding-left: 11px
+.portlet>.portlet-title>.caption
+	float: left
+	display: inline-block
+	font-size: 18px
+	line-height: 18px
+	color: #040404
+	padding: 10px 0
+.portlet-body
+	max-height: 424px
+	overflow-y: scroll
+	height: 424px
+	table
+		th
+			color: #afafaf
+			text-align: left
+			font-size: 12px
+
+
+
+
+
+
